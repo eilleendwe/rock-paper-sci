@@ -18,14 +18,30 @@ function playRound(){
     const lose = (!draw && !win);
 
     if (draw) {
-        return 'Draw! Both chose ${player}';
+        return `Draw! Both chose ${player}`;
     } else if (win) {
-        return 'You win! ${player} beats ${comp}';
+        return `You win! ${player} beats ${comp}`;
     } else {
-        return 'You lose! ${comp} beats ${player}';
+        return `You lose! ${comp} beats ${player}`;
     }
 
 }
 
-const result = playRound();
-alert(result);
+let playerScore = 0;
+let compScore = 0;
+
+function playGame(){
+    for (let i = 0; i < 5; i ++){
+        const winStatus = playRound();
+        console.log(winStatus);
+    }
+
+    if (playerScore > compScore){
+        alert(`You win with ${playerScore} score`);
+    } else {
+        alert(`Computer win with ${compScore} score`);       
+    }
+
+}
+
+playGame();
