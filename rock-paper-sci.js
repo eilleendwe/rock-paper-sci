@@ -30,7 +30,7 @@ function playRound(){
         console.log(`You lose! ${comp} beats ${player}`);
         
     }
-    
+
     console.log(`your score: ${playerScore}`);
     console.log(`computer score: ${compScore}`);
 
@@ -39,14 +39,15 @@ function playRound(){
 
 function playGame(){
     for (let i = 0; i < 5; i ++){
-        const winStatus = playRound();
-        console.log(winStatus);
+        playRound();
     }
 
     if (playerScore > compScore){
         alert(`You win with ${playerScore} score`);
-    } else {
+    } else if (compScore > playerScore) {
         alert(`Computer win with ${compScore} score`);       
+    } else {
+        alert(`Draw with ${compScore} score`)
     }
 
 }
