@@ -5,6 +5,9 @@ function getCompChoice() {
     return choice[index];
 }
 
+let playerScore = 0;
+let compScore = 0;
+
 function playRound(){
     const comp = getCompChoice();
     const player = prompt ("Choose rock, paper or scissors")
@@ -18,17 +21,21 @@ function playRound(){
     const lose = (!draw && !win);
 
     if (draw) {
-        return `Draw! Both chose ${player}`;
+        console.log(`Draw! Both chose ${player}`);
     } else if (win) {
-        return `You win! ${player} beats ${comp}`;
+        playerScore ++;
+        console.log(`You win! ${player} beats ${comp}`);
     } else {
-        return `You lose! ${comp} beats ${player}`;
+        compScore ++;
+        console.log(`You lose! ${comp} beats ${player}`);
+        
     }
+    
+    console.log(`your score: ${playerScore}`);
+    console.log(`computer score: ${compScore}`);
 
 }
 
-let playerScore = 0;
-let compScore = 0;
 
 function playGame(){
     for (let i = 0; i < 5; i ++){
