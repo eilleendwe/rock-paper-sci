@@ -1,0 +1,107 @@
+:root {
+    --prim-dark: #111720;
+    --slate-700: #222831;
+    --sec-dark: #393e46;
+    --dark-hover: #4a4f57;
+    --slate-200: #e2e8f0;
+    --text-100: #ddd;
+    --yellow-500: #fac650;
+}
+
+* {
+    margin: 0;
+}
+
+
+html { /*biar kalo di zoom out background tetep*/ 
+    position: relative;
+    min-height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: var(--prim-dark);
+    color: var(--yellow-500);
+    padding: 20px 0px;
+    font-size: 40px;
+
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--slate-700);
+    color: var(--text-100);
+    height: 100vh;
+
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+
+.score {
+    font-size: 18px;
+}
+
+.sign {
+    font-size: 60px;
+}
+
+.choice {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.choice button {
+    font-size: 60px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--prim-dark);
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.choice button:hover {
+    background-color: var(--dark-hover);
+
+}
+
+.footer {
+    /* position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--slate-700);
+    color: var(--text-100);
+
+}

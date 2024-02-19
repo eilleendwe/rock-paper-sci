@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="rock-paper-sci.css">
 </head>
 <body>
-    <p>Hello</p>
+    <div class="header">
+        ROCK-PAPER-SCISSORS
+    </div>
+
+    <div class="game">
+        <div class="title">
+            <h2>Choose your weapon</h2>
+            <p>First to score 5 points wins the game</p>
+        </div>
+
+        <div class="display">
+            <div class="score-box">
+                <h3 class="sign" id="player-sign">❔</h3>
+                <p class="score" id="player-score">Player: 0</p>
+            </div>
+            <div class="score-box">
+                <h3 class="sign" id="comp-sign">❔</h3>
+                <p class="score" id="comp-score">Computer: 0</p>
+            </div>
+        </div>
+
+        <div class="choice">
+            <button class="rock" data-value="rock">✊</button>
+            <button class="paper" data-value="paper">✋</button>
+            <button class="scissors" data-value="scissors">✌</button>
+        </div>
+
+        <div class="footer">
+            Copyright
+        </div>
+    </div>
     <script src="rock-paper-sci.js">
         
     </script>
