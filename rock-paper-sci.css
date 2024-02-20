@@ -69,6 +69,13 @@ html { /*biar kalo di zoom out background tetep*/
     font-size: 60px;
 }
 
+#comment {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
 .choice {
     display: flex;
     flex-direction: row;
@@ -93,10 +100,6 @@ html { /*biar kalo di zoom out background tetep*/
 }
 
 .footer {
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,3 +108,19 @@ html { /*biar kalo di zoom out background tetep*/
     color: var(--text-100);
 
 }
+
+.music {
+    position: fixed;
+    bottom : 0;
+    left: 0;
+    margin: 10px;
+}
+
+#play {
+    background-color: var(--prim-dark);
+    font-size: 14px;
+    border: none;
+    padding: 8px;
+    border-radius: 16px;
+}
+
